@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Schiffe versenken</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="title_activity_menu">Hauptmenü</string>
+    <string name="title_activity_settings">Einstellungen</string>
+
+    <!-- Einstellungen -->
+    <string name="settings">Einstellungen</string>
+    <string name="settings_general">Allgemeine Einstellungen</string>
+    <string name="player">Spieler</string>
+    <string name="user_name">Benutzername</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_new_game">NewGameActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_find_game">FindGameActivity</string>
+
+    <!-- Menü -->
+    <string name="ok">OK</string>
+    <string name="caution">Achtung</string>
+    <string name="new_game">Neues Spiel</string>
+    <string name="enter_game">Spiel suchen</string>
+    <string name="no_bluetooth_available">Dein Gerät verfügt über keinen Bluetooth-Adapter</string>
+    <string name="action_settings">Einstellungen</string>
+    <string name="action_visibility">Sichtbar machen</string>
+    <string name="action_checkfordevices">Nach Geräten suchen</string>
+    <string name="paired_devices">GEKOPPELTE GERÄTE</string>
+    <string name="newly_discovered_devices">NEU GEFUNDENE GERÄTE</string>
+    <string name="no_paired_devices">Keine gekoppelten Geräte gefunden</string>
+    <string name="select_device">Geräte auswählen</string>
+    <string name="none_found">Keine gefunden</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_chat">ChatActivity</string>
+    <string name="not_connected">Nicht verbunden</string>
+    <string name="title_connected_to">Verbunden mit</string>
+    <string name="title_connecting">verbinde...</string>
+    <string name="title_listening">warte auf Anfrage...</string>
+    <string name="title_not_connected">Nicht verbunden</string>
+    <string name="title_illegal_connection">Unterschiedliche Spielstände, Verbindung nicht möglich</string>
+    <string name="title_activity_device_list">DeviceListActivity</string>
+    <string name="title_scanning">Suche nach Geräten...</string>
+    <string name="action_refresh">Aktualisieren</string>
+
+    <!-- Spiel -->
+    <string name="ships_opponent">Gegnerische Schiffe</string>
+    <string name="ships_own">Eigene Schiffe</string>
+    <string name="state_selecting_tile">wähle Feld aus...</string>
+    <string name="state_placing_ships">setze Schiffe...</string>
+    <string name="state_done_placing_ships">Schiffe gesetzt, warte...</string>
+    <string name="state_enemy_selecting_tile">Gegner feuert...</string>
+
+    <!-- andere -->
+
+    <string name="title_activity_main_menu">MainMenu</string>
+    <string name="done">Fertig</string>
+    <string name="opponent">Gegner</string>
+    <string name="you_win">Glückwunsch! Du hast gewonnen!</string>
+    <string name="you_lose">Schade... Du hast verloren</string>
+
+</resources>

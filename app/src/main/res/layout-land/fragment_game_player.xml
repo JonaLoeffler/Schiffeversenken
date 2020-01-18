@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res/com.jona.schiffeversenken"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:orientation="vertical" >
+
+    <com.jona.common.SquareLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/sqarelayout_player"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" >
+
+        <com.jona.schiffeversenken.GameBoard
+            android:id="@+id/gameboard_player"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparent" >
+        </com.jona.schiffeversenken.GameBoard>
+    </com.jona.common.SquareLayout>
+
+    <com.jona.schiffeversenken.ShipPicker
+        android:id="@+id/ship_picker"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="5dp"
+        android:layout_toLeftOf="@+id/sqarelayout_player" >
+    </com.jona.schiffeversenken.ShipPicker>
+
+    <Button
+        android:id="@+id/btn_done_placing_ships"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="5dp"
+        android:layout_toRightOf="@+id/sqarelayout_player"
+        android:enabled="false"
+        android:padding="5dp"
+        android:text="@string/done" />
+
+    <ImageButton
+        android:id="@+id/btn_turn_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/ship_picker"
+        android:layout_margin="5dp"
+        android:layout_toRightOf="@+id/sqarelayout_player"
+        android:src="@drawable/ic_turn_left"
+        android:visibility="gone" />
+
+    <ImageButton
+        android:id="@+id/btn_turn_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ship_picker"
+        android:layout_alignParentRight="true"
+        android:layout_margin="5dp"
+        android:layout_toRightOf="@+id/sqarelayout_player"
+        android:src="@drawable/ic_turn_right"
+        android:visibility="gone" />
+
+</RelativeLayout>

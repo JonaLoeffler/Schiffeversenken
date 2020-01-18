@@ -1,0 +1,10 @@
+<resources>
+
+    <color name="separator_gray">#ADADAD</color>
+    <color name="btn_active">#5FCAED</color>
+    <color name="btn_inactive">#C4C4C4</color>
+    <color name="text_normal">#1C2629</color>
+    <color name="ocean_blue">#2B65EC</color>
+    <color name="transparent">#00FFFFFF</color>
+
+</resources>
