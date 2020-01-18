@@ -1,0 +1,78 @@
+"  what  ;  arg1  ;  arg2  ;  obj         "    
+<  int   ;  int   ;  int   ;  string/int  >
+
+			          -----------------------
+-----------------------------------	MainMenu	---------------------------------------------------
+			          -----------------------
+		+++   Handler   +++   (Message msg)
+- msg.what
+	- message connection state change
+		- msg.arg1
+			- state connected
+			- state connecting
+			- state listen
+			- state none
+	- message read
+		--> message decoder (String message)
+	- message write
+		--> message decoder (String message)
+	- message device name
+		- msg.getData()
+	- message failure
+
+
+		+++   Message decoder   +++  (String message)
+  
+  msg = stringToMessage(message)
+
+- msg.what
+	- message_intent_startinggame
+
+
+				  -----------------------
+-----------------------------------	MainActivity	---------------------------------------------------
+			          -----------------------
+
+		+++   Handler   +++   (Message msg)
+- msg.what
+	- message connection state change
+		- msg.arg1
+			- state connected
+			- state connecting
+			- state listen
+			- state none
+	- message read
+		--> message decoder (String message)
+	- message write
+		--> message decoder (String message)
+	- message device name
+		- msg.getData()
+	- message failure
+
+
+		+++   Message decoder   +++  (String message)
+
+  msg = stringToMessage(message);
+	
+- msg.what
+	- message player turn change
+	- message game state channge
+		- msg.arg1
+			- gamestate main menu
+			- gamestate starting game
+			- gamestate placing ships
+			- gamestate waiting for opponent
+			- gamestate selecting own tile
+	- message game event
+		- msg.arg1
+			- event enemy fired 	--> tile id
+			- event player fired 	--> tile id
+			- event enemy hit 	--> tile id
+			- event player hit 	--> tile id
+			- event own ship sunk 	--> ship id
+			- event enemy ship sunk --> ship id
+			- event game over 	--> player name
+	- 
+
+
+
